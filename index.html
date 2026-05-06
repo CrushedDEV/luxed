@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxed — Red de Técnicos de Iluminación Verificados para Eventos</title>
+  <meta name="description" content="Conectamos empresas del sector audiovisual con técnicos de iluminación verificados. Contratación directa, sin intermediarios, en menos de 48 horas.">
+  <meta name="keywords" content="técnicos iluminación eventos, contratación técnicos audiovisuales, red técnicos freelance, producción técnica eventos, GrandMA3, ChamSys, Resolume">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<!-- ═══ NAV ═══════════════════════════════════════════════ -->
+<nav class="nav" role="navigation" aria-label="Navegación principal">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">LUX<span>ED</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="tecnicos.html">Técnicos</a></li>
+      <li><a href="formacion.html">Formación</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="tecnicos.html" class="btn btn-outline btn-sm">Busco técnico</a>
+      <a href="registro.html" class="btn btn-primary btn-sm">Soy técnico</a>
+    </div>
+    <button class="nav-mobile-btn" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile" role="dialog" aria-label="Menú móvil">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="tecnicos.html">Técnicos</a></li>
+      <li><a href="formacion.html">Formación</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <div class="nav-mobile-actions">
+      <a href="tecnicos.html" class="btn btn-outline">Busco técnico</a>
+      <a href="registro.html" class="btn btn-primary">Soy técnico</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══ HERO ═══════════════════════════════════════════════ -->
+<section class="hero" aria-label="Presentación">
+  <div class="hero-bg"></div>
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+  <div class="hero-content">
+    <!-- Left -->
+    <div class="hero-left">
+      <div class="hero-eyebrow">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        Red de técnicos de iluminación verificados
+      </div>
+
+      <h1 class="hero-title">
+        Los proyectos de iluminación que mereces,<br><em>sin depender de contactos</em>
+      </h1>
+
+      <p class="hero-subtitle">
+        Crea tu perfil técnico verificado y empieza a recibir propuestas de empresas que buscan exactamente lo que dominas. GrandMA3, ChamSys, Resolume — tu especialidad es lo que el sector necesita.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="registro.html" class="btn btn-primary btn-lg">Crear mi perfil técnico →</a>
+        <a href="#como-funciona" class="btn btn-outline btn-lg">Ver cómo funciona</a>
+      </div>
+
+      <div class="hero-proof">
+        <div class="hero-avatars">
+          <div class="av">AR</div>
+          <div class="av">NT</div>
+          <div class="av">CM</div>
+          <div class="av">SV</div>
+        </div>
+        <p class="hero-proof-text">
+          <strong>127 técnicos</strong> ya reciben propuestas cada semana.<br>
+          De productoras como Eventim, Mad Cool y Dreambeats.
+        </p>
+      </div>
+    </div>
+
+    <!-- Right -->
+    <div class="hero-visual">
+      <div class="hero-card">
+        <div class="hero-card-title">Perfiles verificados</div>
+
+        <div class="tech-mini">
+          <div class="tech-mini-av av-gold">AR</div>
+          <div class="tech-mini-info">
+            <div class="tech-mini-name">Alejandro Ruiz</div>
+            <div class="tech-mini-spec">GrandMA3 · Madrid</div>
+          </div>
+          <span class="badge badge-success"><span class="dot dot-green"></span>Disponible</span>
+        </div>
+
+        <div class="tech-mini">
+          <div class="tech-mini-av av-blue">NT</div>
+          <div class="tech-mini-info">
+            <div class="tech-mini-name">Nadia Torres</div>
+            <div class="tech-mini-spec">ChamSys · Barcelona</div>
+          </div>
+          <span class="badge badge-success"><span class="dot dot-green"></span>Disponible</span>
+        </div>
+
+        <div class="tech-mini">
+          <div class="tech-mini-av av-green">DM</div>
+          <div class="tech-mini-info">
+            <div class="tech-mini-name">Daniel Moya</div>
+            <div class="tech-mini-spec">MA3 · Rigging · Bilbao</div>
+          </div>
+          <span class="badge badge-success"><span class="dot dot-green"></span>Disponible</span>
+        </div>
+      </div>
+
+      <div class="hero-floating hero-floating-1">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Respuesta media: <strong style="color:var(--gold)">3.2 horas</strong>
+      </div>
+      <div class="hero-floating hero-floating-2">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        Verificados con experiencia real en eventos
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ STATS ══════════════════════════════════════════════ -->
+<section class="stats-bar" aria-label="Métricas">
+  <div class="stats-grid">
+    <div class="stat-item fade-up">
+      <div class="stat-number" data-target="127" data-suffix="+">0</div>
+      <div class="stat-label">Técnicos verificados</div>
+    </div>
+    <div class="stat-item fade-up fade-up-d1">
+      <div class="stat-number" data-target="340" data-suffix="+">0</div>
+      <div class="stat-label">Proyectos completados</div>
+    </div>
+    <div class="stat-item fade-up fade-up-d2">
+      <div class="stat-number" data-target="48" data-suffix="h">0</div>
+      <div class="stat-label">Tiempo medio de contratación</div>
+    </div>
+    <div class="stat-item fade-up fade-up-d3">
+      <div class="stat-number" data-target="98" data-suffix="%">0</div>
+      <div class="stat-label">Tasa de satisfacción</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PROBLEMA / SOLUCIÓN ════════════════════════════════ -->
+<section class="section" aria-labelledby="problema-title">
+  <div class="container">
+    <div class="text-center mb-64 fade-up">
+      <div class="section-label">El problema que resolvemos</div>
+      <h2 id="problema-title">Encontrar el técnico adecuado<br>no debería ser una odisea</h2>
+    </div>
+
+    <div class="grid-2">
+      <div class="card fade-up">
+        <div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 2a7 7 0 0 1 7 7c0 2.6-1.4 4.9-3.5 6.2V17a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1.8C6.4 13.9 5 11.6 5 9a7 7 0 0 1 7-7z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="18" x2="14" y2="18"/></svg></div>
+        <h3 class="feature-title">Si eres técnico freelance</h3>
+        <p class="feature-desc">Llevas años perfeccionando tu manejo de GrandMA3 o ChamSys pero los proyectos llegan solo por contactos. Tu próxima oportunidad laboral no debería depender de quién conoces, sino de lo que sabes hacer.</p>
+        <div style="margin-top: 24px;">
+          <ul class="list-check">
+            <li>Visibilidad real ante empresas del sector</li>
+            <li>Perfil verificado con tus especialidades técnicas</li>
+            <li>Recibe propuestas de proyectos reales</li>
+            <li>Construye historial profesional verificable</li>
+          </ul>
+        </div>
+        <a href="registro.html" class="btn btn-primary mt-24">Crea tu perfil →</a>
+      </div>
+
+      <div class="card fade-up fade-up-d2">
+        <div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+        <h3 class="feature-title">Si eres empresa o producción</h3>
+        <p class="feature-desc">Tu evento se estrena en 4 días y el técnico de iluminación acaba de caer enfermo. Llevas horas llamando a conocidos, nadie está disponible o no tiene el perfil exacto. Luxed resuelve esto en horas, no en días.</p>
+        <div style="margin-top: 24px;">
+          <ul class="list-check">
+            <li>Accede a técnicos verificados con software específico</li>
+            <li>Filtra por disponibilidad, ubicación y especialidad</li>
+            <li>Contrata directamente, sin intermediarios</li>
+            <li>Historial real de proyectos y referencias comprobadas</li>
+          </ul>
+        </div>
+        <a href="tecnicos.html" class="btn btn-outline mt-24">Ver técnicos disponibles →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ HOW IT WORKS ════════════════════════════════════════ -->
+<section id="como-funciona" class="section" style="background: var(--bg-2); border-top: 1px solid var(--gold-border); border-bottom: 1px solid var(--gold-border);" aria-labelledby="how-title">
+  <div class="container">
+    <div class="text-center mb-48 fade-up">
+      <div class="section-label">Cómo funciona</div>
+      <h2 id="how-title">Un proceso diseñado para ser rápido</h2>
+      <p style="max-width: 520px; margin: 14px auto 0;">Sin formularios eternos. Sin reuniones innecesarias. Directo al grano.</p>
+    </div>
+
+    <div data-tabs>
+      <div class="tabs-row">
+        <button class="tab-btn active" data-tab="tecnico">Soy técnico freelance</button>
+        <button class="tab-btn" data-tab="empresa">Soy empresa / producción</button>
+      </div>
+
+      <div class="tab-panel" data-panel="empresa">
+        <div class="steps">
+          <div class="step fade-up">
+            <div class="step-num">1</div>
+            <div class="step-title">Describe tu proyecto</div>
+            <p class="step-desc">Indica qué tipo de evento, fechas, softwares necesarios y ubicación. Tardas menos de 3 minutos.</p>
+          </div>
+          <div class="step fade-up fade-up-d1">
+            <div class="step-num">2</div>
+            <div class="step-title">Recibe perfiles verificados</div>
+            <p class="step-desc">Te mostramos técnicos disponibles que encajan exactamente. Ves su historial, especialidades y referencias reales.</p>
+          </div>
+          <div class="step fade-up fade-up-d2">
+            <div class="step-num">3</div>
+            <div class="step-title">Contrata directamente</div>
+            <p class="step-desc">Contactas directamente con el técnico. Sin comisiones ocultas, sin agencia de por medio. Acuerdo 100% entre partes.</p>
+          </div>
+        </div>
+        <div class="text-center mt-40">
+          <a href="tecnicos.html" class="btn btn-primary btn-lg">Buscar técnicos ahora →</a>
+        </div>
+      </div>
+
+      <div class="tab-panel active" data-panel="tecnico">
+        <div class="steps">
+          <div class="step fade-up">
+            <div class="step-num">1</div>
+            <div class="step-title">Crea tu perfil técnico</div>
+            <p class="step-desc">Añade tus especialidades (MA3, ChamSys, Rigging…), años de experiencia, zona de trabajo y disponibilidad.</p>
+          </div>
+          <div class="step fade-up fade-up-d1">
+            <div class="step-num">2</div>
+            <div class="step-title">Verificamos tu perfil</div>
+            <p class="step-desc">El equipo Luxed valida tu experiencia. Esto te da el sello de verificación que aumenta la confianza de las empresas.</p>
+          </div>
+          <div class="step fade-up fade-up-d2">
+            <div class="step-num">3</div>
+            <div class="step-title">Recibe propuestas de proyectos</div>
+            <p class="step-desc">Las empresas te encuentran y contactan cuando necesitan alguien con tu perfil. Tú decides si aceptas o no.</p>
+          </div>
+        </div>
+        <div class="text-center mt-40">
+          <a href="registro.html" class="btn btn-primary btn-lg">Registrarme como técnico →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TÉCNICOS DESTACADOS ════════════════════════════════ -->
+<section class="section" aria-labelledby="tecnicos-title">
+  <div class="container">
+    <div class="flex-between mb-40 fade-up" style="flex-wrap: wrap; gap: 16px;">
+      <div>
+        <div class="section-label">Red Luxed</div>
+        <h2 id="tecnicos-title">Técnicos verificados en la red</h2>
+      </div>
+      <a href="tecnicos.html" class="btn btn-outline">Ver todos los técnicos →</a>
+    </div>
+
+    <div class="tech-cards-grid">
+
+      <!-- Card 1 -->
+      <article class="tech-card fade-up" data-tech-card data-name="Alejandro Ruiz" data-skills="grandma3 grandma2 iluminación" data-avail="disponible" data-location="madrid">
+        <div class="tech-card-head">
+          <div class="tech-av tech-av-gold">
+            AR
+            <span class="verified" title="Verificado por Luxed">✓</span>
+          </div>
+          <div class="tech-meta">
+            <div class="tech-name">Alejandro Ruiz</div>
+            <div class="tech-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Madrid</div>
+          </div>
+          <span class="badge badge-success"><span class="dot dot-green"></span>Disponible</span>
+        </div>
+        <div class="tech-card-body">
+          <div class="tech-tags">
+            <span class="tag tag-gold">GrandMA3</span>
+            <span class="tag">GrandMA2</span>
+            <span class="tag">Lighting Design</span>
+          </div>
+          <p class="tech-bio">Técnico de iluminación con 6 años en eventos corporativos, festivales y conciertos. Especializado en programación MA3 y diseño de partituras de luz.</p>
+          <div class="tech-stats">
+            <div class="tstat"><strong>47</strong>Proyectos</div>
+            <div class="tstat"><strong>6 años</strong>Experiencia</div>
+            <div class="tstat">
+              <strong style="display:flex; align-items:center; gap:3px; color: var(--gold)">
+                ★★★★★
+              </strong>
+              Valoración
+            </div>
+          </div>
+        </div>
+        <div class="tech-card-foot">
+          <a href="tecnicos.html#perfil-alejandro" class="btn btn-primary btn-sm">Ver perfil</a>
+          <a href="contacto.html" class="btn btn-ghost btn-sm">Contactar</a>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="tech-card fade-up fade-up-d1" data-tech-card data-name="Nadia Torres" data-skills="chamsys grandma2 programación" data-avail="disponible" data-location="barcelona">
+        <div class="tech-card-head">
+          <div class="tech-av tech-av-blue">
+            NT
+            <span class="verified" title="Verificado por Luxed">✓</span>
+          </div>
+          <div class="tech-meta">
+            <div class="tech-name">Nadia Torres</div>
+            <div class="tech-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Barcelona</div>
+          </div>
+          <span class="badge badge-success"><span class="dot dot-green"></span>Disponible</span>
+        </div>
+        <div class="tech-card-body">
+          <div class="tech-tags">
+            <span class="tag tag-gold">ChamSys</span>
+            <span class="tag">GrandMA2</span>
+            <span class="tag">Teatro</span>
+          </div>
+          <p class="tech-bio">4 años programando espectáculos de teatro y ópera. Experta en ChamSys MagicQ con créditos en el Gran Teatre del Liceu y el Teatre Nacional de Catalunya.</p>
+          <div class="tech-stats">
+            <div class="tstat"><strong>28</strong>Proyectos</div>
+            <div class="tstat"><strong>4 años</strong>Experiencia</div>
+            <div class="tstat"><strong style="color:var(--gold)">★★★★★</strong>Valoración</div>
+          </div>
+        </div>
+        <div class="tech-card-foot">
+          <a href="tecnicos.html" class="btn btn-primary btn-sm">Ver perfil</a>
+          <a href="contacto.html" class="btn btn-ghost btn-sm">Contactar</a>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="tech-card fade-up fade-up-d2" data-tech-card data-name="Daniel Moya" data-skills="grandma3 rigging estructuras" data-avail="disponible" data-location="bilbao">
+        <div class="tech-card-head">
+          <div class="tech-av tech-av-green">
+            DM
+            <span class="verified" title="Verificado por Luxed">✓</span>
+          </div>
+          <div class="tech-meta">
+            <div class="tech-name">Daniel Moya</div>
+            <div class="tech-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Bilbao</div>
+          </div>
+          <span class="badge badge-success"><span class="dot dot-green"></span>Disponible</span>
+        </div>
+        <div class="tech-card-body">
+          <div class="tech-tags">
+            <span class="tag tag-gold">GrandMA3</span>
+            <span class="tag">Rigging</span>
+            <span class="tag">Festivales</span>
+          </div>
+          <p class="tech-bio">8 años de experiencia en producción de festivales de música. Certificado en rigging y seguridad de estructuras. Ha trabajado en BBK Live, Bilbao BBK, Mad Cool.</p>
+          <div class="tech-stats">
+            <div class="tstat"><strong>52</strong>Proyectos</div>
+            <div class="tstat"><strong>8 años</strong>Experiencia</div>
+            <div class="tstat"><strong style="color:var(--gold)">★★★★★</strong>Valoración</div>
+          </div>
+        </div>
+        <div class="tech-card-foot">
+          <a href="tecnicos.html" class="btn btn-primary btn-sm">Ver perfil</a>
+          <a href="contacto.html" class="btn btn-ghost btn-sm">Contactar</a>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="text-center mt-40 fade-up">
+      <p style="margin-bottom: 20px; font-size: 0.9rem;">Y 124 técnicos más especializados en iluminación, video, sonido y montaje</p>
+      <a href="tecnicos.html" class="btn btn-primary btn-lg">Ver todos los técnicos disponibles →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FEATURES / POR QUÉ LUXED ══════════════════════════ -->
+<section class="section" style="background: var(--bg-2); border-top: 1px solid var(--gold-border);" aria-labelledby="features-title">
+  <div class="container">
+    <div class="text-center mb-64 fade-up">
+      <div class="section-label">Por qué elegirnos</div>
+      <h2 id="features-title">Por qué los mejores técnicos eligen Luxed</h2>
+    </div>
+
+    <div class="grid-3">
+      <div class="feature-card fade-up">
+        <div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+        <h3 class="feature-title">Técnicos por especialidad real</h3>
+        <p class="feature-desc">Cada perfil especifica exactamente qué softwares domina. GrandMA3, ChamSys, Resolume, Wysiwyg… Buscas lo que necesitas, encuentras exactamente eso.</p>
+      </div>
+
+      <div class="feature-card fade-up fade-up-d1">
+        <div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+        <h3 class="feature-title">Verificación real, no autoproclamada</h3>
+        <p class="feature-desc">El equipo Luxed valida cada perfil antes de publicarlo. El sello de verificación es una garantía de que la experiencia declarada es real y comprobada.</p>
+      </div>
+
+      <div class="feature-card fade-up fade-up-d2">
+        <div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+        <h3 class="feature-title">48 horas, no 2 semanas</h3>
+        <p class="feature-desc">La gestión directa elimina capas de intermediarios. Las empresas encuentran y contratan en horas. El tiempo de reacción importa en producción en vivo.</p>
+      </div>
+
+      <div class="feature-card fade-up">
+        <div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></div>
+        <h3 class="feature-title">Sin comisiones de agencia</h3>
+        <p class="feature-desc">El trato es directo entre empresa y técnico. Luxed no cobra porcentaje de cada contratación. Pagas por acceso a la red, no por cada proyecto.</p>
+      </div>
+
+      <div class="feature-card fade-up fade-up-d1">
+        <div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+        <h3 class="feature-title">Historial de proyectos real</h3>
+        <p class="feature-desc">Cada técnico acumula un historial de proyectos completados y valoraciones de empresas reales. Toma decisiones con información objetiva, no con currículums inflados.</p>
+      </div>
+
+      <div class="feature-card fade-up fade-up-d2">
+        <div class="feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M1 6c0 0 5-2 11-2s11 2 11 2"/><path d="M3 10s4-1.5 9-1.5S21 10 21 10"/><path d="M5 14s3-1 7-1 7 1 7 1"/><circle cx="12" cy="19" r="2"/></svg></div>
+        <h3 class="feature-title">Red activa, no base de datos muerta</h3>
+        <p class="feature-desc">Los técnicos actualizan su disponibilidad en tiempo real. Ves quién está libre esta semana o el próximo mes. Sin llamar a 20 personas para saber si alguna está libre.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TESTIMONIALS ════════════════════════════════════════ -->
+<section class="section" aria-labelledby="testimonials-title">
+  <div class="container">
+    <div class="text-center mb-64 fade-up">
+      <div class="section-label">Prueba social</div>
+      <h2 id="testimonials-title">Técnicos que ya han dado el salto</h2>
+    </div>
+
+    <div class="grid-3">
+      <div class="testimonial-card fade-up">
+        <div class="stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="testimonial-text">Llevaba 3 años como freelance dependiendo de contactos de contactos. Desde que tengo perfil en Luxed recibo entre 4 y 6 propuestas de proyectos al mes. La diferencia es brutal.</p>
+        <div class="testimonial-author">
+          <div class="testi-av">LF</div>
+          <div>
+            <div class="testi-name">Laura Ferrer</div>
+            <div class="testi-role">Técnica de Iluminación Freelance · Valencia</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card fade-up fade-up-d1">
+        <div class="stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="testimonial-text">Activé el perfil un martes. El viernes ya tenía una propuesta de una productora de Madrid para un festival de verano. Nunca pensé que conseguir trabajo fuera a ser tan directo.</p>
+        <div class="testimonial-author">
+          <div class="testi-av">JM</div>
+          <div>
+            <div class="testi-name">Javi Molina</div>
+            <div class="testi-role">Técnico GrandMA3 Freelance · Sevilla</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card fade-up fade-up-d2">
+        <div class="stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="testimonial-text">Necesitábamos un programador de MA3 para un corporate de última hora. En menos de 4 horas teníamos 3 perfiles verificados y disponibles. Algo que con una agencia tardaba días.</p>
+        <div class="testimonial-author">
+          <div class="testi-av">MG</div>
+          <div>
+            <div class="testi-name">Marcos García</div>
+            <div class="testi-role">Director de Producción · Eventim España</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TRAINING TEASER ════════════════════════════════════ -->
+<section class="section" style="background: var(--bg-2); border-top: 1px solid var(--gold-border); border-bottom: 1px solid var(--gold-border);" aria-labelledby="formacion-title">
+  <div class="container">
+    <div class="two-col">
+      <div class="fade-up">
+        <div class="section-label">Formación Luxed</div>
+        <h2 id="formacion-title">Domina los softwares que el sector demanda</h2>
+        <p style="margin: 20px 0 28px;">Cursos de formación específica en los programas más solicitados en producción de eventos: GrandMA3, ChamSys MagicQ, Resolume Arena. Impartidos por técnicos en activo, no por formadores teóricos.</p>
+        <ul class="list-check" style="margin-bottom: 32px;">
+          <li>Contenido práctico basado en casos reales de producción</li>
+          <li>Actualizaciones incluidas a medida que evoluciona el software</li>
+          <li>Certificado Luxed que acredita tu formación en el sector</li>
+          <li>Comunidad de técnicos en activo con quien aprender</li>
+        </ul>
+        <a href="formacion.html" class="btn btn-primary btn-lg">Ver cursos disponibles →</a>
+      </div>
+
+      <div class="fade-up fade-up-d2">
+        <div class="grid-2" style="gap: 16px;">
+          <div class="course-card">
+            <div class="course-thumb">
+              <div class="course-software">MA3</div>
+            </div>
+            <div class="course-body">
+              <div class="course-cat">Formación básica</div>
+              <div class="course-title">GrandMA3 — Programación esencial</div>
+            </div>
+            <div class="course-foot">
+              <div class="course-price"><span class="course-price-old">137€</span>110€</div>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <div class="course-thumb">
+              <div class="course-software">MQ</div>
+            </div>
+            <div class="course-body">
+              <div class="course-cat">Formación básica</div>
+              <div class="course-title">ChamSys MagicQ — De cero a producción</div>
+            </div>
+            <div class="course-foot">
+              <div class="course-price"><span class="course-price-old">137€</span>110€</div>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <div class="course-thumb">
+              <div class="course-software">RSL</div>
+            </div>
+            <div class="course-body">
+              <div class="course-cat">Formación básica</div>
+              <div class="course-title">Resolume Arena — VJing profesional</div>
+            </div>
+            <div class="course-foot">
+              <div class="course-price"><span class="course-price-old">137€</span>110€</div>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <div class="course-thumb">
+              <div class="course-software" style="font-size: 1rem; line-height: 1.3; text-align: center;">Pack<br>Completo</div>
+            </div>
+            <div class="course-body">
+              <div class="course-cat">Bundle</div>
+              <div class="course-title">Formación Básica Iluminación y Montaje</div>
+            </div>
+            <div class="course-foot">
+              <div class="course-price">35€</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA FINAL ═══════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="cta-box fade-up">
+      <h2>Tu próximo proyecto ya está buscando a alguien como tú</h2>
+      <p>Productoras como Eventim, Mad Cool y Dreambeats buscan técnicos en Luxed cada semana. Crea tu perfil, lo verificamos en 24-48 horas, y las empresas empiezan a encontrarte.</p>
+      <div class="cta-btns">
+        <a href="registro.html" class="btn btn-primary btn-lg">Crear mi perfil ahora →</a>
+        <a href="tecnicos.html" class="btn btn-outline btn-lg">¿Buscas técnicos?</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ══════════════════════════════════════════════ -->
+<footer class="footer" aria-label="Pie de página">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">LUX<span>ED</span></div>
+        <p class="footer-desc">La red profesional que conecta empresas del sector audiovisual con técnicos de iluminación verificados para eventos.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn" aria-label="Instagram" title="Instagram">IG</a>
+          <a href="#" class="social-btn" aria-label="LinkedIn" title="LinkedIn">in</a>
+          <a href="#" class="social-btn" aria-label="YouTube" title="YouTube">YT</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer-col-title">Plataforma</div>
+        <ul class="footer-links">
+          <li><a href="tecnicos.html">Buscar técnicos</a></li>
+          <li><a href="registro.html">Registrarme</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="formacion.html">Formación</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer-col-title">Especialidades</div>
+        <ul class="footer-links">
+          <li><a href="tecnicos.html?s=grandma3">Técnicos GrandMA3</a></li>
+          <li><a href="tecnicos.html?s=chamsys">Técnicos ChamSys</a></li>
+          <li><a href="tecnicos.html?s=resolume">Técnicos Resolume</a></li>
+          <li><a href="tecnicos.html?s=rigging">Técnicos Rigging</a></li>
+          <li><a href="tecnicos.html?s=diseño">Diseñadores de Luz</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer-col-title">Contacto</div>
+        <ul class="footer-links">
+          <li><a href="contacto.html">Contactar</a></li>
+          <li><a href="mailto:team@stayluxed.com">team@stayluxed.com</a></li>
+          <li><a href="tel:+34656848537">+34 656 84 85 37</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 Luxed. Todos los derechos reservados.</div>
+      <div class="footer-legal">
+        <a href="#">Política de privacidad</a>
+        <a href="#">Política de cookies</a>
+        <a href="#">Aviso legal</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

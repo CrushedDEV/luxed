@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Técnicos de Iluminación Verificados — Luxed</title>
+  <meta name="description" content="Encuentra técnicos de iluminación y montaje verificados para tu evento. Filtra por especialidad (GrandMA3, ChamSys, Resolume), disponibilidad y ubicación.">
+  <meta name="keywords" content="contratar técnicos iluminación, técnicos audiovisuales disponibles, GrandMA3 freelance, ChamSys técnico, producción técnica eventos España">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">LUX<span>ED</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="tecnicos.html">Técnicos</a></li>
+      <li><a href="formacion.html">Formación</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="tecnicos.html" class="btn btn-outline btn-sm">Busco técnico</a>
+      <a href="registro.html" class="btn btn-primary btn-sm">Soy técnico</a>
+    </div>
+    <button class="nav-mobile-btn" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+  </div>
+  <div class="nav-mobile">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="tecnicos.html">Técnicos</a></li>
+      <li><a href="formacion.html">Formación</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <div class="nav-mobile-actions">
+      <a href="tecnicos.html" class="btn btn-outline">Busco técnico</a>
+      <a href="registro.html" class="btn btn-primary">Soy técnico</a>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-inner fade-up">
+    <div class="section-label">Red Luxed</div>
+    <h1>Técnicos de iluminación<br><em class="gradient-text">verificados y disponibles</em></h1>
+    <p>Profesionales del sector audiovisual con experiencia real en eventos, festivales, teatro y corporativos. Filtra por especialidad y disponibilidad para encontrar exactamente el perfil que necesitas.</p>
+  </div>
+</section>
+
+<!-- SEARCH & FILTERS -->
+<section class="section-sm" style="padding-top: 0;">
+  <div class="container">
+    <div class="filter-bar">
+      <div class="filter-search">
+        <span class="filter-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span>
+        <input type="search" placeholder="Buscar por nombre, software o ciudad…" aria-label="Buscar técnicos">
+      </div>
+
+      <select class="filter-select" id="avail-select" aria-label="Filtrar por disponibilidad">
+        <option value="all">Cualquier disponibilidad</option>
+        <option value="disponible">Disponible ahora</option>
+        <option value="proximo">Disponible próximo mes</option>
+        <option value="ocupado">No disponible</option>
+      </select>
+
+      <select class="filter-select" id="sort-select" aria-label="Ordenar por">
+        <option value="default">Relevancia</option>
+        <option value="projects">Más proyectos</option>
+        <option value="experience">Más experiencia</option>
+      </select>
+    </div>
+
+    <div class="filter-chips mb-16">
+      <button class="filter-chip active" data-filter="all">Todos</button>
+      <button class="filter-chip" data-filter="grandma3">GrandMA3</button>
+      <button class="filter-chip" data-filter="grandma2">GrandMA2</button>
+      <button class="filter-chip" data-filter="chamsys">ChamSys</button>
+      <button class="filter-chip" data-filter="resolume">Resolume</button>
+      <button class="filter-chip" data-filter="rigging">Rigging</button>
+      <button class="filter-chip" data-filter="diseño">Diseño de Luz</button>
+      <button class="filter-chip" data-filter="wysiwyg">Wysiwyg</button>
+    </div>
+
+    <!-- Results count -->
+    <p style="font-size: 0.82rem; color: var(--text-3); margin-bottom: 24px;">Mostrando <strong style="color: var(--gold)">6</strong> técnicos verificados</p>
+
+    <!-- CARDS GRID -->
+    <div class="tech-cards-grid" id="tech-grid">
+
+      <!-- 1 -->
+      <article class="tech-card fade-up" data-tech-card data-name="Alejandro Ruiz" data-skills="grandma3 grandma2 iluminación diseño" data-avail="disponible" data-location="madrid">
+        <div class="tech-card-head">
+          <div class="tech-av tech-av-gold">AR<span class="verified" title="Verificado">✓</span></div>
+          <div class="tech-meta">
+            <div class="tech-name">Alejandro Ruiz</div>
+            <div class="tech-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Madrid · Movilidad nacional</div>
+          </div>
+          <span class="badge badge-success"><span class="dot dot-green"></span>Disponible</span>
+        </div>
+        <div class="tech-card-body">
+          <div class="tech-tags">
+            <span class="tag tag-gold">GrandMA3</span>
+            <span class="tag">GrandMA2</span>
+            <span class="tag">Lighting Design</span>
+            <span class="tag">Corporativos</span>
+          </div>
+          <p class="tech-bio">6 años programando conciertos y eventos corporativos. Especializado en GrandMA3 con certificación oficial. Ha cubierto festivales como Primavera Sound y Sonorama.</p>
+          <div class="tech-stats">
+            <div class="tstat"><strong>47</strong>Proyectos</div>
+            <div class="tstat"><strong>6 años</strong>Experiencia</div>
+            <div class="tstat"><strong style="color:var(--gold)">★★★★★</strong>5.0</div>
+          </div>
+        </div>
+        <div class="tech-card-foot">
+          <a href="contacto.html" class="btn btn-primary btn-sm">Contratar →</a>
+          <span style="font-size:0.78rem; color:var(--text-3)">Libre desde: ahora</span>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="tech-card fade-up fade-up-d1" data-tech-card data-name="Nadia Torres" data-skills="chamsys grandma2 teatro programación" data-avail="disponible" data-location="barcelona">
+        <div class="tech-card-head">
+          <div class="tech-av tech-av-blue">NT<span class="verified" title="Verificado">✓</span></div>
+          <div class="tech-meta">
+            <div class="tech-name">Nadia Torres</div>
+            <div class="tech-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Barcelona · Movilidad nacional</div>
+          </div>
+          <span class="badge badge-success"><span class="dot dot-green"></span>Disponible</span>
+        </div>
+        <div class="tech-card-body">
+          <div class="tech-tags">
+            <span class="tag tag-gold">ChamSys</span>
+            <span class="tag">GrandMA2</span>
+            <span class="tag">Teatro</span>
+            <span class="tag">Ópera</span>
+          </div>
+          <p class="tech-bio">Experta en ChamSys MagicQ con créditos en el Liceu y el TNC. 4 años especializándose en espectáculos de teatro y producción escénica de alto nivel.</p>
+          <div class="tech-stats">
+            <div class="tstat"><strong>28</strong>Proyectos</div>
+            <div class="tstat"><strong>4 años</strong>Experiencia</div>
+            <div class="tstat"><strong style="color:var(--gold)">★★★★★</strong>5.0</div>
+          </div>
+        </div>
+        <div class="tech-card-foot">
+          <a href="contacto.html" class="btn btn-primary btn-sm">Contratar →</a>
+          <span style="font-size:0.78rem; color:var(--text-3)">Libre desde: ahora</span>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="tech-card fade-up fade-up-d2" data-tech-card data-name="Carlos Mejía" data-skills="resolume vjing video" data-avail="ocupado" data-location="valencia">
+        <div class="tech-card-head">
+          <div class="tech-av tech-av-purple">CM<span class="verified" title="Verificado">✓</span></div>
+          <div class="tech-meta">
+            <div class="tech-name">Carlos Mejía</div>
+            <div class="tech-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Valencia</div>
+          </div>
+          <span class="badge badge-warning"><span class="dot dot-orange"></span>En proyecto</span>
+        </div>
+        <div class="tech-card-body">
+          <div class="tech-tags">
+            <span class="tag tag-gold">Resolume</span>
+            <span class="tag">VJing</span>
+            <span class="tag">Mapping</span>
+            <span class="tag">Festivales</span>
+          </div>
+          <p class="tech-bio">5 años como VJ y operador de video en festivales y eventos de club. Especialista en Resolume Arena y proyecciones de mapping arquitectónico para eventos en directo.</p>
+          <div class="tech-stats">
+            <div class="tstat"><strong>35</strong>Proyectos</div>
+            <div class="tstat"><strong>5 años</strong>Experiencia</div>
+            <div class="tstat"><strong style="color:var(--gold)">★★★★★</strong>4.9</div>
+          </div>
+        </div>
+        <div class="tech-card-foot">
+          <a href="contacto.html" class="btn btn-outline btn-sm">Avisar disponibilidad</a>
+          <span style="font-size:0.78rem; color:var(--text-3)">Libre: junio 2026</span>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="tech-card fade-up" data-tech-card data-name="Sara Vidal" data-skills="wysiwyg depence diseño iluminación" data-avail="disponible" data-location="sevilla">
+        <div class="tech-card-head">
+          <div class="tech-av tech-av-teal">SV<span class="verified" title="Verificado">✓</span></div>
+          <div class="tech-meta">
+            <div class="tech-name">Sara Vidal</div>
+            <div class="tech-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Sevilla · Movilidad sur</div>
+          </div>
+          <span class="badge badge-success"><span class="dot dot-green"></span>Disponible</span>
+        </div>
+        <div class="tech-card-body">
+          <div class="tech-tags">
+            <span class="tag tag-gold">Wysiwyg</span>
+            <span class="tag">Depence</span>
+            <span class="tag">Diseño</span>
+            <span class="tag">Previsualización</span>
+          </div>
+          <p class="tech-bio">Diseñadora de iluminación especializada en previsualización con Wysiwyg y Depence. 3 años trabajando en producción ejecutiva y diseño de espectáculos para marcas y eventos de moda.</p>
+          <div class="tech-stats">
+            <div class="tstat"><strong>19</strong>Proyectos</div>
+            <div class="tstat"><strong>3 años</strong>Experiencia</div>
+            <div class="tstat"><strong style="color:var(--gold)">★★★★★</strong>4.8</div>
+          </div>
+        </div>
+        <div class="tech-card-foot">
+          <a href="contacto.html" class="btn btn-primary btn-sm">Contratar →</a>
+          <span style="font-size:0.78rem; color:var(--text-3)">Libre desde: ahora</span>
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="tech-card fade-up fade-up-d1" data-tech-card data-name="Daniel Moya" data-skills="grandma3 rigging estructuras festivales" data-avail="disponible" data-location="bilbao">
+        <div class="tech-card-head">
+          <div class="tech-av tech-av-green">DM<span class="verified" title="Verificado">✓</span></div>
+          <div class="tech-meta">
+            <div class="tech-name">Daniel Moya</div>
+            <div class="tech-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Bilbao · Movilidad nacional</div>
+          </div>
+          <span class="badge badge-success"><span class="dot dot-green"></span>Disponible</span>
+        </div>
+        <div class="tech-card-body">
+          <div class="tech-tags">
+            <span class="tag tag-gold">GrandMA3</span>
+            <span class="tag">Rigging</span>
+            <span class="tag">Festivales</span>
+            <span class="tag">Seguridad</span>
+          </div>
+          <p class="tech-bio">8 años en producción de festivales de gran formato. Certificado en rigging y seguridad estructural. Ha trabajado en BBK Live, Mad Cool, Primavera Sound y Rototom.</p>
+          <div class="tech-stats">
+            <div class="tstat"><strong>52</strong>Proyectos</div>
+            <div class="tstat"><strong>8 años</strong>Experiencia</div>
+            <div class="tstat"><strong style="color:var(--gold)">★★★★★</strong>5.0</div>
+          </div>
+        </div>
+        <div class="tech-card-foot">
+          <a href="contacto.html" class="btn btn-primary btn-sm">Contratar →</a>
+          <span style="font-size:0.78rem; color:var(--text-3)">Libre desde: ahora</span>
+        </div>
+      </article>
+
+      <!-- 6 -->
+      <article class="tech-card fade-up fade-up-d2" data-tech-card data-name="Irene López" data-skills="chamsys diseño iluminación corporativos" data-avail="ocupado" data-location="madrid">
+        <div class="tech-card-head">
+          <div class="tech-av tech-av-gold">IL<span class="verified" title="Verificado">✓</span></div>
+          <div class="tech-meta">
+            <div class="tech-name">Irene López</div>
+            <div class="tech-location"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Madrid</div>
+          </div>
+          <span class="badge badge-warning"><span class="dot dot-orange"></span>En proyecto</span>
+        </div>
+        <div class="tech-card-body">
+          <div class="tech-tags">
+            <span class="tag tag-gold">ChamSys</span>
+            <span class="tag">Diseño</span>
+            <span class="tag">Corporativos</span>
+            <span class="tag">Giras</span>
+          </div>
+          <p class="tech-bio">5 años diseñando iluminación para giras nacionales y eventos de marca. Especialista en ChamSys para corporativos de alto presupuesto con experiencia en grandes superficies.</p>
+          <div class="tech-stats">
+            <div class="tstat"><strong>31</strong>Proyectos</div>
+            <div class="tstat"><strong>5 años</strong>Experiencia</div>
+            <div class="tstat"><strong style="color:var(--gold)">★★★★★</strong>4.9</div>
+          </div>
+        </div>
+        <div class="tech-card-foot">
+          <a href="contacto.html" class="btn btn-outline btn-sm">Avisar disponibilidad</a>
+          <span style="font-size:0.78rem; color:var(--text-3)">Libre: julio 2026</span>
+        </div>
+      </article>
+
+      <!-- Empty state -->
+      <div class="empty-state" style="grid-column: 1/-1;">
+        <div class="empty-state-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+        <p>No se encontraron técnicos con esos filtros.</p>
+        <button class="btn btn-outline mt-16" onclick="document.querySelector('.filter-chip[data-filter=all]').click(); document.querySelector('.filter-search input').value='';">Limpiar filtros</button>
+      </div>
+    </div>
+
+    <!-- CTA para empresas -->
+    <div class="cta-box mt-40 fade-up">
+      <h2 style="font-size: 1.8rem;">¿No encuentras el perfil exacto?</h2>
+      <p>Cuéntanos qué necesitas y buscamos en nuestra red de técnicos no listados públicamente.</p>
+      <div class="cta-btns">
+        <a href="contacto.html" class="btn btn-primary btn-lg">Solicitar búsqueda personalizada →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">LUX<span>ED</span></div>
+        <p class="footer-desc">La red profesional que conecta empresas del sector audiovisual con técnicos de iluminación verificados para eventos.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn" aria-label="Instagram">IG</a>
+          <a href="#" class="social-btn" aria-label="LinkedIn">in</a>
+          <a href="#" class="social-btn" aria-label="YouTube">YT</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Plataforma</div>
+        <ul class="footer-links">
+          <li><a href="tecnicos.html">Buscar técnicos</a></li>
+          <li><a href="registro.html">Registrarme</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="formacion.html">Formación</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Especialidades</div>
+        <ul class="footer-links">
+          <li><a href="#">Técnicos GrandMA3</a></li>
+          <li><a href="#">Técnicos ChamSys</a></li>
+          <li><a href="#">Técnicos Resolume</a></li>
+          <li><a href="#">Técnicos Rigging</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Contacto</div>
+        <ul class="footer-links">
+          <li><a href="contacto.html">Contactar</a></li>
+          <li><a href="mailto:team@stayluxed.com">team@stayluxed.com</a></li>
+          <li><a href="tel:+34656848537">+34 656 84 85 37</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 Luxed. Todos los derechos reservados.</div>
+      <div class="footer-legal">
+        <a href="#">Política de privacidad</a>
+        <a href="#">Política de cookies</a>
+        <a href="#">Aviso legal</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
