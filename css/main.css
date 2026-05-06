@@ -79,6 +79,7 @@ strong { color: var(--text); }
 .mb-8 { margin-bottom: 8px; }
 .mb-16 { margin-bottom: 16px; }
 .mb-24 { margin-bottom: 24px; }
+.mb-32 { margin-bottom: 32px; }
 .mb-40 { margin-bottom: 40px; }
 .mb-48 { margin-bottom: 48px; }
 .mb-64 { margin-bottom: 64px; }
@@ -160,6 +161,10 @@ strong { color: var(--text); }
 .gradient-text {
   background: linear-gradient(135deg, var(--gold-light), var(--gold));
   -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  display: inline-block;
+  padding-right: 0.2em;
+  padding-bottom: 0.3em;
+  line-height: 1.3;
 }
 
 /* --- Check list --- */
